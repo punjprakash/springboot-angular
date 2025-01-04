@@ -28,4 +28,8 @@ public class ProductService {
     public Optional<Product> getProductById(int productId) {
         return products.stream().filter(p -> p.getProductId() == productId).findFirst();
     }
+
+    public List<Product> getProducts() {
+        return products;
+    }
 }
